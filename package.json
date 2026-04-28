@@ -1,0 +1,22 @@
+{
+  "name": "tatkal-helper-server",
+  "version": "1.0.0",
+  "description": "Backend server for the Tatkal Helper Chrome extension",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js"
+  },
+  "keywords": [
+    "irctc",
+    "tatkal",
+    "train"
+  ],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "cors": "^2.8.6",
+    "express": "^5.2.1"
+  }
+}
