@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;700&family=Noto+Sans:wght@400;500&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Noto Sans', sans-serif;
+    width: 280px;
+    background: #0d1117;
+    color: #e6edf3;
+    font-size: 13px;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: linear-gradient(135deg, #1a3a5c, #0d2137);
+    padding: 12px 14px;
+    border-bottom: 2px solid #f97316;
+}
+
+.header .logo {
+    font-size: 20px;
+}
+
+.header h2 {
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    color: #f97316;
+    letter-spacing: 1px;
+}
+
+.section {
+    padding: 10px 14px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+label {
+    font-size: 11px;
+    color: #8b949e;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-top: 6px;
+}
+
+input,
+select {
+    width: 100%;
+    padding: 6px 8px;
+    background: #161b22;
+    border: 1px solid #30363d;
+    border-radius: 5px;
+    color: #e6edf3;
+    font-size: 13px;
+    font-family: 'Noto Sans', sans-serif;
+    transition: border-color 0.2s;
+}
+
+input:focus,
+select:focus {
+    outline: none;
+    border-color: #f97316;
+}
+
+input::placeholder {
+    color: #484f58;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #21262d;
+    margin: 4px 0;
+}
+
+.actions {
+    padding: 10px 14px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+button {
+    width: 100%;
+    padding: 7px 10px;
+    border: 1px solid #30363d;
+    border-radius: 5px;
+    background: #21262d;
+    color: #e6edf3;
+    font-size: 12px;
+    font-family: 'Noto Sans', sans-serif;
+    cursor: pointer;
+    transition: background 0.15s, border-color 0.15s;
+}
+
+button:hover {
+    background: #30363d;
+    border-color: #8b949e;
+}
+
+button.primary {
+    background: #f97316;
+    border-color: #f97316;
+    color: #fff;
+    font-weight: 500;
+}
+
+button.primary:hover {
+    background: #ea6a0a;
+}
+
+button.danger {
+    background: #1f1117;
+    border-color: #6e2b2b;
+    color: #f85149;
+}
+
+button.danger:hover {
+    background: #2d1b1b;
+}
+
+.status {
+    padding: 6px 14px 10px;
+    font-size: 12px;
+    color: #3fb950;
+    min-height: 24px;
+    text-align: center;
+}
+
+.status.error {
+    color: #f85149;
+}
