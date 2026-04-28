@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tatkal Helper</title>
+    <link rel="stylesheet" href="popup.css" />
+</head>
+
+<body>
+    <div class="header">
+        <span class="logo">🚆</span>
+        <h2>Tatkal Helper</h2>
+    </div>
+
+    <div class="section">
+        <label>Saved Profiles</label>
+        <select id="profiles">
+            <option value="">-- Select a profile --</option>
+        </select>
+        <button id="loadProfile">Load Selected Profile</button>
+    </div>
+
+    <hr />
+
+    <div class="section">
+        <label>Name</label>
+        <input id="name" placeholder="Passenger Name" />
+
+        <label>Age</label>
+        <input id="age" placeholder="Age" type="number" min="1" max="120" />
+
+        <label>Gender</label>
+        <select id="gender">
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+            <option value="Other">Other</option>
+        </select>
+
+        <label>Berth Preference</label>
+        <select id="berth">
+            <option value="LB">Lower Berth</option>
+            <option value="MB">Middle Berth</option>
+            <option value="UB">Upper Berth</option>
+            <option value="SL">Side Lower</option>
+            <option value="SU">Side Upper</option>
+            <option value="NO">No Preference</option>
+        </select>
+    </div>
+
+    <div class="actions">
+        <button id="addProfile">💾 Save Profile</button>
+        <button id="deleteProfile" class="danger">🗑 Delete Selected</button>
+        <button id="fillForm" class="primary">✍ Fill IRCTC Form</button>
+    </div>
+
+    <div id="status" class="status"></div>
+
+    <script src="popup.js"></script>
+</body>
+
+</html>
