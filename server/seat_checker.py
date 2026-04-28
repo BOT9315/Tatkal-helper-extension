@@ -96,23 +96,3 @@ if __name__ == "__main__":
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    BOT_TOKEN = "8707904323:AAHBg3mkkJqUTHKUQuY6BVahkESxpmn7cvs"
-
-# Your Telegram Chat ID
-CHAT_ID = "5815022307"
