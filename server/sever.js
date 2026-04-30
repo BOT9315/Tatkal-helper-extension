@@ -6,6 +6,7 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
+
 // POST /check-seat
 // Body: { train, from, to, date }
 app.post("/check-seat", (req, res) => {
@@ -15,7 +16,6 @@ app.post("/check-seat", (req, res) => {
     if (!train || !from || !to || !date) {
         return res.status(400).json({ error: "train, from, to, and date are required." });
     }
-
     // Spawn Python with args — seat_checker.py no longer uses input()
     const python = spawn("python", [
         "seat_checker.py",
