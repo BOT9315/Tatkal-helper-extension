@@ -11,8 +11,8 @@ import requests
 import json
 
 # ── Config (use env vars in production) ──────────────────────────────────────
-BOT_TOKEN = os.getenv("TELEGRAM_BOT_TOKEN", "YOUR BOT TOKEN")
-CHAT_ID   = os.getenv("TELEGRAM_CHAT_ID",   "YOUR CHAT ID")
+BOT_TOKEN = os.getenv("TELEGRAM_BOT_TOKEN", " ENTER YOUR BOT TOKEN")
+CHAT_ID   = os.getenv("TELEGRAM_CHAT_ID",   "ENTER YOUR CHAT ID")
 
 # ── Telegram alert ────────────────────────────────────────────────────────────
 
@@ -93,6 +93,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
-
-
