@@ -10,7 +10,6 @@ from flask_cors import CORS  # FIX: was missing; Node server needs CORS
 app = Flask(__name__)
 CORS(app)  # Allow requests from localhost:3000 (Node server)
 
-
 # ── Prediction logic ──────────────────────────────────────────────────────────
 
 WEEKEND_DAYS = {"Friday", "Saturday", "Sunday"}
@@ -74,7 +73,6 @@ def predict():
         "prediction": label,
         "inputs": {"seats": seats, "day": day, "train_popularity": popularity},
     })
-
 
 @app.route("/health", methods=["GET"])
 def health():
