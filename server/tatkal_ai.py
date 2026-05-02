@@ -3,7 +3,6 @@ tatkal_ai.py — Tatkal booking success probability predictor
 Run: python tatkal_ai.py
 Port: 5000
 """
-
 from flask import Flask, request, jsonify
 from flask_cors import CORS  # FIX: was missing; Node server needs CORS
 
