@@ -77,7 +77,6 @@ def predict():
 def health():
     return jsonify({"status": "ok"})
 
-
 # ── Entry point ───────────────────────────────────────────────────────────────
 
 if __name__ == "__main__":
