@@ -48,7 +48,6 @@ def predict_tatkal(seats: int, day: str, train_popularity: int) -> tuple[int, st
 
 
 # ── Routes ────────────────────────────────────────────────────────────────────
-
 @app.route("/predictTatkal", methods=["GET"])
 def predict():
     try:
