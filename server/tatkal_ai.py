@@ -44,7 +44,6 @@ def predict_tatkal(seats: int, day: str, train_popularity: int) -> tuple[int, st
         label = "Medium Success"
     else:
         label = "Low Success"
-
     return score, label
 
 
