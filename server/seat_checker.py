@@ -88,7 +88,5 @@ def main():
 
     # server.js reads stdout
     print(json.dumps(result))
-
-
 if __name__ == "__main__":
     main()
