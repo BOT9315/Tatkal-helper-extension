@@ -6,7 +6,6 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-
 // POST /check-seat
 // Body: { train, from, to, date }
 app.post("/check-seat", (req, res) => {
