@@ -4,7 +4,6 @@ Usage: python seat_checker.py <train> <from> <to> <date>
 
 Checks seat availability and sends a Telegram alert if seats are found.
 """
-
 import sys
 import os
 import requests
